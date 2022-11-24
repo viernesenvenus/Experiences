@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="country_script.js" defer></script>
+    <title>Experiences-Peru</title>
+    <link rel="stylesheet" href="./Peru_styles.css">
+</head>
+
+<body>
+    <header>
+        <img src="../General Images/Design/Logo.png" class="logo">
+        <ul>
+            <li><a href="../index.html" class="Links-btn">Home</a></li>
+            <li><a href="../Explore.html" class="Links-btn, active">Explore</a></li>
+            <li><a href="../Review.html" class="Links-btn">Reviews</a></li>
+            <li><a href="../Contact.html" class="Links-btn">Contact</a></li>
+        </ul>
+    </header>
+
+    <div class="container"> 
+        <div class="hero">
+        </div>
+        <main> 
+            <h1> Lima,Peru </h1>
+            <div class="profile-container">
+                <div class="profile">
+                    <div class="img-container">
+                    </div>
+                    <div class="text">
+                    <h3>Lucia Cruz</h3>
+                    <p> November 16, 2022 </p>
+                    </div>
+                </div>
+        
+            </div>
+            <div class="content">
+                <figure class="limacountry"><img src="../Countries/Countires' Images/Peru/istockphoto-1152011641-612x612.jpeg" alt="limacountry"></figure>
+                <p>Precisely, if you come to Peru, It is a high probability that you’ll arrive first at Lima, located on the coast. There is situated the International airport named Jorge Chavez. Many visitants consider the Peruvian capital as a passing city, previous to getting to Cusco, Machu Picchu, or the eastern Amazon. That is why the Machu Travel Peru group has prepared an article with the best things to do in Lima. We hope that this is an incentive for you to dare to know this unmissable site. Do not miss one of the most popular places in Peru.</p>
+                <p> Lima, also known as the Ciudad de Reyes (due to its foundation coinciding with the Three Kings month, January), is a place full of culture and tradition.Our recommendation is to visit it between December to April (Dry Season). Sunny days, clear skies, and warm and humid weather will accompany you during these months. On the opposite, from May to November (the Rainy season) you will find a Lima with cloudy skies, down fog, cold and humid weather, and small showers.
+                </p>
+                <p>Regarding safety, like other Capital cities, Lima has a little share of crime. Mostly located on the outskirts of the city. Therefore, always we recommend don’t stray from the city center and tourist districts such as Miraflores or Barranco, where there are more security cameras and police officers. Happily, our 20 best things to do in Lima take place within safe tourist areas, so rest assured.</p>
+                <h4>1. PLAZA DE ARMAS OF LIMA</h4>
+                <p>Its construction dates from 1535 when the Spanish Francisco Pizarro decided to fund the capital of a recent nation there. Many scholars affirm that the surrounding buildings had a high bill of construction, belonging to the Renaissance style. Unfortunately, these buildings were left in ruins after the earthquake of 1746. However, their later reconstructions of the baroque invoice, present a new face to the Plaza de Armas.</p>
+                <ul>
+                    <li>Address: Historic center of Lima </li>
+                    <li> Opening hours: Public area </li>
+                    <li> Entrances fee: Free</li>
+                </ul>
+                <figure>
+                    <img src="../Countries/Countires' Images/Peru/plaza-de-armas - lima.jpeg" alt="plazadearmaslima">
+                    
+                </figure>
+                
+                <h4> 2. BEST PERUVIAN GASTRONOMY TOUR</h4>
+                <p>The boom of Peruvian gastronomy in the last decades positioned The Andean country cuisine among the best in the world. Mexican, Italian, French, and even Chinese share a table with the Peruvian one. Not in vain, Lima is considered for several consecutive years as the gastronomic South American capital by the prestige Britain ranking “The Fifty Best”, which is responsible to elaborate a list of the fifty best cities with good food and restaurants worldwide.</p>
+                <p>The unmissable dishes to try are:</p>
+                <ul>
+                    <li>Lomo Saltado (Peruvian Beef Stir-Fry) which is fried pieces of meat, along with onion slices, scallop sauce, and soy sauce. All these are accompanied by rice and french fries.</li>
+                    <li> The Aji de Gallina (Peruvian Spicy Creamed Chicken) is Chicken strips battered and spread in a spicy sauce of yellow chili and milk, accompanied by boiled potatoes, lettuce, white rice, and an olive.</li>
+                    <li>Arroz Chaufa (Chaufa rice) is sautéed rice in soy sauce and oyster, mixed with Chinese onion, pieces of fried egg, and pieces of chicken.</li>
+                </ul>
+                <figure> 
+                    <img src="../Countries/Countires' Images/Peru/criollo-peruvian-food.jpeg" alt="peruvianfood">
+            
+                </figure>
+               
+                <h4> 3.TAKE A WALK BY A CAT’S PARK </h4>
+                <p>As happens with large cities, all its original inhabitants left the historic center to settle in much larger urban areas, Lima is no exception. Its inhabitants were moved to districts like Miraflores, San Isidro, and Surco. Precisely, the main square of Miraflores, called John. F. Kennedy park, is the residence of many funny cats and visiting it is one of the best things to do in Lima. These felines spend the day walking through the green areas of the park, resting under the sidewalks, on the branch of a tree, or simply walking with park visitors. They are friendly and let themselves be caressed and fed.</p>
+                <p>Nowadays, there are more than 70 cats in all of Jhon. F. Kennedy park. Their origin is totally unknown. Some affirm that the Cats belonged to a near convent with rat problems and a good day, these deserted the cloister.</p>
+                <ul>
+                    <li>Adress: Jose Larco Avenue 15074, Miraflores district, Lima</li>
+                    <li>Opening hours: Public area</li>
+                    <li>Entrances fee: Free </li>
+                </ul>
+                <figure>
+               <img src="../Countries/Countires' Images/Peru/cat's park lima.jpeg" alt="catpark">
+            </figure>
+               <div class="tags">
+                <a href="#">South America</a>
+               </div>
+            </div>
+        </main>
+
+
+        <main>
+            <row>
+                <column>
+                    <NoAction>
+                        <h2>Time</h2>
+                        <div class ="datetime">
+                            <p id ="timeIreland"></p>
+                        </div>
+                        <script>
+                            var getIrelandTime = function(){
+                             document.getElementById("timeIreland").innerHTML = new Date().toLocaleString("en-ZA", {timeZone:'America/Lima'});
+                            }
+                            getIrelandTime();
+                            setInterval(getIrelandTime,1000);
+                        </script>
+                    </NoAction>
+                </column>
+                <column>
+                    <Action>
+                        <h2>Weather</h2>
+                        <a class="weatherwidget-io" href="https://forecast7.com/en/n12d05n77d04/lima/" data-label_1="LIMA" data-label_2="WEATHER" data-theme="original" data-basecolor="#033f63" data-accent="" data-highcolor="#eaac8b" data-lowcolor="#98c1d9" data-suncolor="#fedc97" data-mooncolor="#3d5a80" data-cloudcolor="#3d5a80" data-cloudfill="#3d5a80" data-raincolor="#98c1d9" data-snowcolor="#033f63" >LIMA WEATHER</a>
+                        <script>
+                            !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src='https://weatherwidget.io/js/widget.min.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script','weatherwidget-io-js');
+                        </script>
+                    </Action>
+                </column>
+                <column>
+                    <NoAction>
+                        <Box>
+                            <h2>Currency</h2>
+                            <left-box>
+                                <select name="currency" class="currency"></select>
+                                <input type="number" name="" id="input">
+                            </left-box>
+                            <right-box>
+                                <select name="currency" class="currency"></select>
+                                <input type="number" name="" id="result" disabled>
+                            </right-box>
+                            <button class="btn" id="btn">CONVERT</button>
+                        </Box>
+                    </NoAction>
+                </column>
+                <column>
+                        <h2>Map</h2>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d499488.8828761888!2d-77.26798500958965!3d-12.025826961732605!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105c5f619ee3ec7%3A0x14206cb9cc452e4a!2sLima%2C%20Peru!5e0!3m2!1sen!2sza!4v1669300404600!5m2!1sen!2sza" 
+                        width="230" height="210" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </column>
+            </row>
+            </main>
+
+    </div>
+   
+        
+    </div>
+
+    <footer>
+        <img src="../General Images/Design/Logo.png" class="BottomLogo">
+        <Address>
+            <h2>Address:</h2>
+            <ul_Links>
+                <li>
+                    <icon><i class="fa fa-map-marker" aria-hidden="true"></i></icon>
+                    <p>Level 1, Hope this is a fake home address</p>
+                </li>
+                <li>
+                    <icon><i class="fa fa-phone" aria-hidden="true"></i></icon>
+                    <a href="tel:+123 456 7890">+123 456 7890</a>
+                </li>
+                <li>
+                    <icon><i class="fa fa-envelope-o" aria-hidden="true"></i></icon>
+                    <a href="eMail:">Experience@gmail.com</a>
+                </li>
+            </ul_Links>
+        </Address>
+        <QuickLinks>
+            <h2>Quick Links</h2>
+            <ul_QuickLinks>
+                <li><a href="../Index.html">Home</a></li>
+                <li><a href="../Review.html">Reviews</a></li>
+                <li><a href="../Contact.html">Contact</a></li>
+            </ul_QuickLinks>
+        </QuickLinks>
+        <Contact>
+            <h2>Follow Us</h2>
+            <ul_Media>
+                <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                <li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+                </ul_Meida>
+                <Contact>
+    </footer>
+    <CopyRights>
+        Copyright &copy 2022 Experiences. All Rights Reserved
+    </CopyRights>
+</body>
+
+</html>

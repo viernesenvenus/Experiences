@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="country_script.js" defer></script>
+    <title>Experiences-South Africa</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./country_styles.css">
+</head>
+<body>
+    <header>
+        <img src="../General Images/Design/Logo.png" class="logo">
+        <ul>
+            <li><a href="../index.html" class="Links-btn">Home</a></li>
+            <li><a href="../Review.html" class="Links-btn">Reviews</a></li>
+            <li><a href="../Contact.html" class="Links-btn">Contact</a></li>
+        </ul>
+    </header>
+    <Heading>
+        <textBox>
+            <h2>South Africa<br><keyword>CAPE TOWN</keyword></h2>
+            <p> Cape Town is a port city located on an island beneath the towering Table Mountain on South Africa's 
+                southwest coast. Slowly spinning cable cars ascend to the mountain's flat summit, 
+                from where breathtaking views of the city, the busy harbor, and vessels bound for Robben Island are available.
+                The infamous jail that previously housed Nelson Mandela and is now a living museum.</p>
+        </textBox>
+        <imgBox>
+            <img src="./Countires' Images/South Africa/South Africa.webp">
+        </imgBox>
+    </Heading>
+    <Main>
+        <row>
+            <column>
+                <NoAction>
+                    <h2>Time</h2>
+                    <div class ="datetime">
+                        <p id ="timeSouthAfrica"></p>
+                    </div>
+                    <script>
+                        
+                        var getSouthAfricaTime = function(){
+                        document.getElementById("timeSouthAfrica").innerHTML = new Date().toLocaleString("en-ZA", {timeZone:'Africa/Johannesburg'});
+                        }
+                        getSouthAfricaTime();
+                        setInterval(getSouthAfricaTime,1000);
+                    </script>
+                </NoAction>
+            </column>
+            <column>
+                <Action>
+                <h2>Weather</h2>
+                    <a class="weatherwidget-io" href="https://forecast7.com/en/n33d9218d42/cape-town/" data-basecolor="#033f63" data-textcolor="#fff" data-highcolor="#eaac8b" data-lowcolor="#98c1d9" data-suncolor="#fedc97" data-mooncolor="#3d5a80" data-cloudcolor="#3d5a80" data-cloudfill="#3d5a80" data-raincolor="#98c1d9" data-snowcolor="#033f63" >Cape Town, South Africa</a>
+                    <script>
+                    !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src='https://weatherwidget.io/js/widget.min.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script','weatherwidget-io-js');
+                    </script>
+                </Action>
+            </column>
+            <column>
+                <NoAction>
+                    <Box>
+                        <h2>Currency</h2>
+                        <left-box>
+                            <select name="currency" class="currency"></select>
+                            <input type="number" name="" id="input">
+                        </left-box>
+                        <right-box>
+                            <select name="currency" class="currency"></select>
+                            <input type="number" name="" id="result" disabled>
+                        </right-box>
+                        <button class="btn" id="btn">CONVERT</button>
+                    </Box>
+                </NoAction>
+            </column>
+            <column>
+                    <h2>Map</h2>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d847638.5875514164!2d18.095579499697443!3d-33.91312865212223!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1dcc500f8826eed7%3A0x687fe1fc2828aa87!2sCape%20Town!5e0!3m2!1sen!2sza!4v1668676372959!5m2!1sen!2sza" 
+                    width="230" height="210" padding="35px" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </column>
+        </row>
+</Main>
+<Main>
+    <row>
+        <column>
+            <Text>
+                <img src="./Countires' Images/South Africa/South Africa_Table Mountain.JPG">
+                <a href="#" class="Action"><h2>Table Mountain</h2>
+                    <p>A World Heritage Site for the mountain's unique flora and wildlife are seen nowhere else in the world. 
+                        There are various hiking paths to explore. While the cable car takes you to the mountain top to view the breathtaking city.</p></a>
+            </Text>
+        </column>
+        <column>
+            <Text>
+                <img src="./Countires' Images/South Africa/South Africa_Robbin Island.jpg">
+                <a href="#" class="Action"><h2>Roben Island</h2>
+                    <p>A UNESCO World Heritage Site for being known as the location of a high-security prison where Nelson Mandela and other political prisoners were imprisoned under the apartheid regime.</p></a>
+            </Text>
+        </column>
+        <column>
+            <Text>
+                <img src="./Countires' Images/South Africa/South Africa_Cape Point.jpeg">
+                <a href="#" class="Action"><h2>Cape Point</h2>
+                    <p>Cape Point Nature Reserve is a gorgeous location with lush hills, a rocky shoreline, and breathtaking scenery. Baboons, Cape fur seals, and birds are among the animals that call the area home.</p></a>
+            </Text>
+        </column>
+        <column>
+            <Text>
+                <img src="./Countires' Images/South Africa/South Africa_Groot Constantia.jpeg">
+                <a href="#" class="Action"><h2>Groot Constantia</h2>
+                <p>A popular tourist destination in Cape Town's Southern Suburbs. It is South Africa's oldest wine estate and produces some of the best wines in the country.</p></a>
+            </Text>
+        </column>
+    </row>
+    <row>
+        <column>
+            <Text>
+                <img src="./Countires' Images/South Africa/South Africa_Pen.JPG">
+                <a href="#" class="Action"><h2>V&A Waterfront</h2>
+                    <p>The Victoria & Albert Waterfront in Cape Town is one of South Africa's most famous tourist sites. It is located on the Atlantic Ocean and provides incredible views and a selection of stores and restaurants.</p></a>
+            </Text>
+        </column>
+        <column>
+            <Text>
+                <img src="./Countires' Images/South Africa/South Africa_Garden.jpeg">
+                <a href="#" class="Action"><h2>Kirstenbosch Botanical Garden</h2>
+                <p>Located at the base of Table Mountain, is considered one of the world's most beautiful gardens occuping over 528 hectares and home to an astounding variety of plant life.</p></a>
+            </Text>
+        </column>
+        <column>
+            <Text>
+                <img src="./Countires' Images/South Africa/South Africa_Bo Kaap.JPG">
+                <a href="#" class="Action"><h2>Bo Kaap</h2>
+                    <p>The Bo-Kaap is one of Cape Town's most unique neighbourhoods, with plenty to see, taste, and discover.</p></a>
+            </Text>
+        </column>
+        <column>
+            <Text>
+                <img src="./Countires' Images/South Africa/South Africa_Blaauberg.jpg">
+                <a href="#" class="Action"><h2>Blaauwberg</h2>
+                <p>Blaauwberg, or "Blouberg," as it is commonly known by locals, is an exquisite length of coastline located just a short drive from Cape Town's city centre.</p></a>
+            </Text>
+        </column>
+    </row>
+</Main>
+    <footer>
+        <img src="../General Images/Design/Logo.png" class="BottomLogo">
+        <Address>
+            <h2>Address:</h2>
+            <ul_Links>
+                <li>
+                    <icon><i class="fa fa-map-marker" aria-hidden="true"></i></icon>
+                    <p>United Kingdom, South Zoe, 5 Abbie Ways, 1234</p>
+                </li>
+                <li>
+                    <icon><i class="fa fa-phone" aria-hidden="true"></i></icon>
+                    <a href="tel:+123 456 7890">+123 456 7890</a>
+                </li>
+                <li>
+                    <icon><i class="fa fa-envelope-o" aria-hidden="true"></i></icon>
+                    <a href="eMail:">Experience@gmail.com</a>
+                </li>
+            </ul_Links>
+        </Address>
+        <QuickLinks>
+            <h2>Quick Links</h2>
+            <ul_QuickLinks>
+                <li><a href="../Index.html">Home</a></li>
+                <li><a href="../Reviews.html">Reviews</a></li>
+                <li><a href="../Contact.html">Contact</a></li>
+            </ul_QuickLinks>
+        </QuickLinks>
+        <Contact>
+            <h2>Follow Us</h2>
+            <ul_Media>
+                <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                <li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+            </ul_Meida>
+        <Contact>   
+    </footer>
+    <CopyRights>
+        Copyright &copy 2022 Experiences. All Rights Reserved
+    </CopyRights>
+</body>
+</html>

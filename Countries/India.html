@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="country_script.js" defer></script>
+    <title>Experiences-India</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./India_styles.css">
+</head>
+
+<body>
+    <header>
+        <img src="../General Images/Design/Logo.png" class="logo">
+        <ul>
+            <li><a href="../index.html" class="Links-btn">Home</a></li>
+            <li><a href="../Review.html" class="Links-btn">Reviews</a></li>
+            <li><a href="../Contact.html" class="Links-btn">Contact</a></li>
+        </ul>
+    </header>
+    <Heading>
+        <textBox>
+            <h2>India<br>
+                <keyword>New Delhi</keyword>
+            </h2>
+            <p>Laid out by British architect Edwin Lutyens, the Indian capital is a striking modern metropolis.  A symbol 
+            of the country's rich past and thriving present, Delhi is a city where ancient and modern blend seamlessly together.
+            A gracious contrast to Old Delhi's winding streets, the grand avenues and stately buildings of New Delhi
+            are rich with history and culture, from Gandhi's Delhi home (and the site of his assassination) to the 
+            tomb of Humayun, a complex of Mughal buildings reminiscent of the Taj Mahal. </p>
+        </textBox>
+        <imgBox>
+            <img src= "./Countires' Images/India/Delhi.jpg" alt="India">
+        </imgBox>
+    </Heading>
+    <Main>
+        <row>
+            <column>
+                <NoAction>
+                    <h2>Time</h2>
+                    <div class ="datetime">
+                        <p id ="timeIndia"></p>
+                    </div>
+                    <script>
+                       
+                        var getIndiaTime = function(){
+                        document.getElementById("timeIndia").innerHTML = new Date().toLocaleString("en-ZA",  {timeZone:'Asia/Kolkata'});
+                            }
+                        getIndiaTime();
+                        setInterval(getIndiaTime,1000);
+                    </script>
+                </NoAction>
+            </column>
+            <column>
+                <Action>
+                    <h2>Weather</h2>
+                    <a class="weatherwidget-io" href="https://forecast7.com/en/28d6677d23/delhi/"
+                        data-basecolor="#033f63" data-textcolor="#fff" data-highcolor="#eaac8b" data-lowcolor="#98c1d9"
+                        data-suncolor="#fedc97" data-mooncolor="#3d5a80" data-cloudcolor="#3d5a80"
+                        data-cloudfill="#3d5a80" data-raincolor="#98c1d9" data-snowcolor="#033f63">New Delhi, India
+                    </a>
+                    <script>
+                        !function (d, s, id) { var js, fjs = d.getElementsByTagName(s)[0]; if (!d.getElementById(id)) { js = d.createElement(s); js.id = id; js.src = 'https://weatherwidget.io/js/widget.min.js'; fjs.parentNode.insertBefore(js, fjs); } }(document, 'script', 'weatherwidget-io-js');
+                    </script>
+                </Action>
+            </column>
+            <column>
+                <NoAction>
+                    <Box>
+                        <h2>Currency</h2>
+                        <left-box>
+                            <select name="currency" class="currency"></select>
+                            <input type="number" name="" id="input">
+                        </left-box>
+                        <right-box>
+                            <select name="currency" class="currency"></select>
+                            <input type="number" name="" id="result" disabled>
+                        </right-box>
+                        <button class="btn" id="btn">CONVERT</button>
+                    </Box>
+                </NoAction>
+            </column>
+            <column>
+                    <h2>Map</h2>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d224346.4812976537!2d77.06889807642492!3d28.52728034224065!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cfd5b347eb62d%3A0x52c2b7494e204dce!2sNew%20Delhi%2C%20Delhi!5e0!3m2!1sen!2sin!4v1669206449387!5m2!1sen!2sin" 
+                    width="230" height="210" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    
+            </column>
+        </row>
+    </Main>
+    <Main>
+        <row>
+            <column>
+                <Text>
+                    <img src="./Countires' Images/India/Delhi_India_Gate.jpg">
+                    <a href="#" class="Action">
+                        <h2>India Gate</h2>
+                        <p>At the centre of New Delhi stands the 42 m high India Gate, an "Arc-de-Triomphe" like archway in the middle of a crossroad.
+                            It commemorates the 70,000 Indian soldiers who lost their lives fighting for the British Army during the World War I and bears 
+                            the names of more than 13,516 soldiers killed in the Northwestern Frontier in the Afghan war of 1919.</p>
+                    </a>
+                </Text>
+            </column>
+            <column>
+                <Text>
+                    <img src="./Countires' Images/India/Delhi_Red_Fort.jpg">
+                    <a href="#" class="Action">
+                        <h2>Red Fort</h2>
+                        <p>The Red Fort or Lal Qila is a historic fort in Delhi in India that served as the main residence of the Mughal Emperors. Visit red fort
+                            to experience the rich history and cultre of india and shop in the meena bazaar hosted in the courtyard just like the old times.
+                        </p>
+                    </a>
+                </Text>
+            </column>
+            <column>
+                <Text>
+                    <img src="./Countires' Images/India/Delhi_Humayun's_Tomb.jpg">
+                    <a href="#" class="Action">
+                        <h2>Humayun's Tomb</h2>
+                        <p>Located in New Delhi’s Nizamuddin East neighbourhood, A UNESCO World Heritage Site, the Humayun’s Tomb lies on
+                        the banks of the Yamuna, in proximity to the dargah of popular Sufi saint Nizamuddin Auliya.This tomb, built in 1570, 
+                        is of particular cultural significance as it was the first garden-tomb on the Indian subcontinent. </p>
+                    </a>
+                </Text>
+            </column>
+            <column>
+                <Text>
+                    <img src="./Countires' Images/India/Delhi_Qutub_Minar.jpg">
+                    <a href="#" class="Action">
+                        <h2>Qutub Minar</h2>
+                        <p>Qutab Minar is a soaring, 73 m-high tower of victory, built in 1193 by Qutab-ud-din Aibak immediately after the
+                        defeat of Delhi's last Hindu kingdom.It is said that if you can encircle it with your hands while standing with your
+                         back to it your wish will be fulfilled.</p>
+                    </a>
+                </Text>
+            </column>
+        </row>
+        <row>
+            <column>
+                <Text>
+                    <img src="./Countires' Images/India/Delhi_Swaminarayan_Akshardham.jpg">
+                    <a href="#" class="Action">
+                        <h2>Akshardham Temple </h2>
+                        <p>Swaminarayan Akshardham in New Delhi epitomizes 10,000 years of Indian culture in all its breathtaking grandeur,
+                        beauty, wisdom and bliss. It brilliantly showcases the essence of India’s ancient architecture, traditions and timeless 
+                        spiritual messages. The Akshardham experience is an enlightening journey through India’s glorious art, values and contributions for the progress, happiness and harmony of mankind.</p>
+                    </a>
+                </Text>
+            </column>
+            <column>
+                <Text>
+                    <img src="./Countires' Images/India/Delhi_Lodhi_Garden.jpg">
+                    <a href="#" class="Action">
+                        <h2>Lodi Garden</h2>
+                        <p>Lodi Gardens is a city park situated in New Delhi, India. Spread over 90 acres, it contains Mohammed Shah's Tomb, 
+                            the Tomb of Sikandar Lodi, the Shisha Gumbad and the Bara Gumbad. An oasis in an otherwise crowded, dusty city, Lodi 
+                            Gardens is the perfect place to spend a relaxing afternoon admiring nature.
+                            </p>
+                    </a>
+                </Text>
+            </column>
+            <column>
+                <Text>
+                    <img src="./Countires' Images/India/Delhi_Lotus_Temple.jpg">
+                    <a href="#" class="Action">
+                        <h2>Lotus Temple</h2>
+                        <p>Lotus temple is built in the shape of a lotus flower and is the last of seven Major Bahai's temples built around 
+                            the world. Completed in 1986 it is set among the lush green landscaped gardens.This architectural wonder looks like an 
+                            enormous lotus blossom and is reminiscent of the Sydney Opera House.</p>
+                    </a>
+                </Text>
+            </column>
+            <column>
+                <Text>
+                    <img src="./Countires' Images/India/Delhi_Bangla_Sahib.jpg">
+                    <a href="#" class="Action">
+                        <h2>Gurudwara Bangla Sahib</h2>
+                        <p>Gurudwara Bangla Sahib is a Sikh temple as well as a tourist place in Delhi. A beautiful Sikh temple with golden onion domes
+                        and a sacred lake, the rhythmic chanting of the Sikhs makes it a truly spiritual place to wander. If you wish to explore art, culture, religion and history of Delhi, then Gurudwara Bangla Sahib should be on your list 
+                        of places to visit in Delhi.</p>
+                    </a>
+                </Text>
+            </column>
+        </row>
+    </Main>
+    <footer>
+        <img src="../General Images/Design/Logo.png" class="BottomLogo">
+        <Address>
+            <h2>Address:</h2>
+            <ul_Links>
+                <li>
+                    <icon><i class="fa fa-map-marker" aria-hidden="true"></i></icon>
+                    <p>United Kingdom, South Zoe, 5 Abbie Ways, 1234</p>
+                </li>
+                <li>
+                    <icon><i class="fa fa-phone" aria-hidden="true"></i></icon>
+                    <a href="tel:+123 456 7890">+123 456 7890</a>
+                </li>
+                <li>
+                    <icon><i class="fa fa-envelope-o" aria-hidden="true"></i></icon>
+                    <a href="eMail:">Experience@gmail.com</a>
+                </li>
+            </ul_Links>
+        </Address>
+        <QuickLinks>
+            <h2>Quick Links</h2>
+            <ul_QuickLinks>
+                <li><a href="../Index.html">Home</a></li>
+                <li><a href="../Review.html">Reviews</a></li>
+                <li><a href="../Contact.html">Contact</a></li>
+            </ul_QuickLinks>
+        </QuickLinks>
+        <Contact>
+            <h2>Follow Us</h2>
+            <ul_Media>
+                <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                <li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+                </ul_Meida>
+                <Contact>
+    </footer>
+    <CopyRights>
+        Copyright &copy 2022 Experiences. All Rights Reserved
+    </CopyRights>
+</body>
+</html>
